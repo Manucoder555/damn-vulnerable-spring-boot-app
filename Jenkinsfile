@@ -6,8 +6,8 @@ pipeline {
     sh 'rm trufflehog || true'
     sh 'docker run --name secscan gesellix/trufflehog --json https://github.com/Viswasringan/damn-vulnerable-spring-boot-app.git > trufflehog'
     sh 'docker rm secscan'
-   }*/
-  }
+   }
+  }*/
   /*stage('SCA') {
    steps {
     snykSecurity(
