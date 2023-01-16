@@ -48,6 +48,6 @@ pipeline {
     sh 'docker stop dvsba'
     sh 'docker rm dvsba'
    }
-   }
- } */
+   }*/
+ } 
 }
