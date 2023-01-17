@@ -34,12 +34,12 @@ pipeline {
         sh 'docker build -t dvsba:latest .'
       }
     }
-   /*stage ('Deploy') {
+   stage ('Deploy') {
     agent any
     steps {
      sh 'docker run -d --name dvsba -p 8082:8080 dvsba:latest'
     }
-   }*/
+   }
  /*  stage ('DAST Scan') {
     agent any
    steps {
